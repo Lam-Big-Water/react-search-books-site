@@ -1,8 +1,8 @@
 import myAxios from './myAxios';
 
-const BooksURL = "http://openlibrary.org/search.json?title=";
+const BooksURL = "";
 
 
 // get all books data
 
-export const reqAllBooks = (data)=> myAxios.get(`${BooksURL}${data}`);
+export const reqAllBooks = (data)=> myAxios.get(`${BooksURL}/api/search.json?title=${data}`);
